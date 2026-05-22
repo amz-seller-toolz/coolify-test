@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
   res.send('Coolify Test erfolgreich deployed 🚀');
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server läuft auf Port ${PORT}`);
 });
 
