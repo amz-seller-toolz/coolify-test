@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Coolify Demo App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>🚀 Coolify Demo Dashboard</h1>
+
+    <div class="card">
+      <button onclick="loadHealth()">Health Check</button>
+      <button onclick="getRandom()">Random Data</button>
+    </div>
+
+    <div class="card">
+      <h2>Nachricht erstellen</h2>
+      <input id="msgInput" placeholder="Text eingeben..." />
+      <button onclick="sendMessage()">Senden</button>
+    </div>
+
+    <div class="card">
+      <h2>Messages</h2>
+      <button onclick="loadMessages()">Reload</button>
+      <div id="messages"></div>
+    </div>
+
+    <pre id="output"></pre>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
